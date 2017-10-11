@@ -35,23 +35,19 @@ $(document).ready(function() {
                     var html = "";
                     $(".name").html( JSON.stringify(json['name']));
 
+                    var CurrT= JSON.stringify(json.main['temp'])+' C';
+                    var CurrF= ((JSON.stringify(json.main['temp']))*1.8 + 32)+' F'
 
-                    var currT= JSON.stringify(json.main['temp']);
-                    var currF= (JSON.stringify(json.main['temp']*1.8+32));
-
-                    $(".temp").html(currT+' C')
-
-                    var CurrTT=currT+' C'
-                    var CurrTF=currF+' F'
-
-                    console.log(CurrTF)
+                    $(".temp").html(CurrT)
+;
+                    console.log(CurrF)
 
                     function modifyT() {
                         var t2 = document.getElementById("temp");
-                        if (t2.firstChild.nodeValue == CurrTT) {
-                            t2.firstChild.nodeValue = CurrTF;
+                        if (t2.firstChild.nodeValue == CurrT) {
+                            t2.firstChild.nodeValue = CurrF;
                         } else {
-                            t2.firstChild.nodeValue = CurrTT;
+                            t2.firstChild.nodeValue = CurrT;
                         }
                     }
 
