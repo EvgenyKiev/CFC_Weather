@@ -28,6 +28,12 @@ $(document).ready(function() {
                 success: function(json) {
                     var html = "";
                     $(".name").html( JSON.stringify(json['name']));
+                    //
+
+
+                    //
+
+
 
                     var CurrT= JSON.stringify(json.main['temp'])+' C';
                     var CurrF= ((JSON.stringify(json.main['temp']))*1.8 + 32)+' F'
