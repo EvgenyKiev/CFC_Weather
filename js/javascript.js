@@ -2,8 +2,6 @@
 
 //start JQ
 $(document).ready(function() {
-
-
         //start gps
         if (!navigator.geolocation){
             console.log("Geolocation is not supported by your browser");
@@ -15,15 +13,11 @@ $(document).ready(function() {
             var longitude =  ( position.coords.longitude).toFixed(2);
 
 
-            ///live coord
-
             console.log('Latitude is ' + latitude + 'Longitude is ' + longitude )
-            ///test
-            //var apisrc="https://fcc-weather-api.glitch.me/api/current?lat=50.4&lon=30.5"
+
             var apisrc = "https://fcc-weather-api.glitch.me/api/current?lat=" + latitude+ "&" + "lon=" + longitude;
 
 
-            ///test2
             $.ajax({
                 type: 'get',
                 url: apisrc,
