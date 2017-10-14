@@ -23,12 +23,12 @@ $(document).ready(function() {
                     $(".name").html( JSON.stringify(json['name']));
 
                     var currT= (JSON.stringify(json.main['temp'])+' C');
-                    var currF= (JSON.stringify(json.main['temp']*1.8+32))+' F';
+                    var currF= (Math.round((JSON.stringify(json.main['temp']*1.8+32))))+' F';
 
                     $(".temp").html(currT)
 
                     //console.log((currF.toFixed(2)));
-
+                
                     function modifyT() {
                         var t2 = document.getElementById("temp");
                         if (t2.firstChild.nodeValue == currT) {
