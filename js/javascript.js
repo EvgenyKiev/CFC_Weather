@@ -28,7 +28,7 @@ $(document).ready(function() {
                     $(".temp").html(currT)
 
                     //console.log((currF.toFixed(2)));
-                
+
                     function modifyT() {
                         var t2 = document.getElementById("temp");
                         if (t2.firstChild.nodeValue == currT) {
@@ -40,8 +40,7 @@ $(document).ready(function() {
 
                     var el = document.getElementById("temp");
                     el.addEventListener("click", modifyT, false);
-                    //
-
+                    
                     var imageLink=JSON.stringify(json.weather[0].icon);
                     html += "<img src = " + imageLink + " " + "alt='" + 'Txt' + "'>";
                     $(".ico").html(html);
