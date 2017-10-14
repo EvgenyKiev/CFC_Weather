@@ -25,7 +25,7 @@ $(document).ready(function() {
                     var currT= (JSON.stringify(json.main['temp'])+' C');
                     var currF= (Math.round((JSON.stringify(json.main['temp']*1.8+32))))+' F';
 
-                    $(".temp").html(currT)
+                    $(".temp").html(currT);
 
                     //console.log((currF.toFixed(2)));
 
@@ -40,7 +40,7 @@ $(document).ready(function() {
 
                     var el = document.getElementById("temp");
                     el.addEventListener("click", modifyT, false);
-                    
+
                     var imageLink=JSON.stringify(json.weather[0].icon);
                     html += "<img src = " + imageLink + " " + "alt='" + 'Txt' + "'>";
                     $(".ico").html(html);
