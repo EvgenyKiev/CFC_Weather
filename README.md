@@ -5,9 +5,24 @@ t.bot notificator informator
 Мессенджеров Telegram  или Slack
 с помощью интерфейса обмена  формата JSON
 
+по формату
+yyyyMMDDHHMMSS.json,
+
+где
+"datetime": [поле для сообщения],
+"channel": [код групы],
+"message": [поле для сообщения]}
+
+
+
 
 Настройки
 telebotcfg.json
+
+
+           1 - telegramm
+           2 - slack 
+
 
         CONFIG OPTIONS
         
