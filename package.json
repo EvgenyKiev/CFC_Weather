@@ -1,0 +1,25 @@
+{
+  "name": "tbotinform",
+  "version": "2.0.0",
+  "description": "t.bot notificator informator",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "telegramm",
+    "bot",
+    "json",
+    "alert"
+  ],
+  "author": "Y.B.",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/client": "^4.2.0",
+    "axios": "^0.18.0",
+    "find": "^0.2.9",
+    "form-data": "^2.3.2",
+    "fs": "^0.0.1-security",
+    "slack": "11.0.0"
+  }
+}

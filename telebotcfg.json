@@ -1,0 +1,11 @@
+    {
+        "deleteFile": "false",
+        "messenger":"2",
+        "t_token":"botXXXXXXXXXXXXXXXXXX",
+        "s_token":"xoxb-XXXXXXXX-XXXXXXXXXXXX",
+        "interval": "10",
+        "pathLog": "logs",
+        "parsedPath":"logs/parsed",
+        "failedPath" : "logs/failed"
+                
+    }

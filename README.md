@@ -19,7 +19,6 @@ yyyyMMDDHHMMSS.json,
 Настройки
 telebotcfg.json
 
-
            1 - telegramm
            2 - slack 
 
@@ -37,7 +36,6 @@ telebotcfg.json
 
 
         t_token
-        
         telegram token
         "bot484777140:XXXXXXXX.....XXXXX",
         
